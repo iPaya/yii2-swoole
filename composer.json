@@ -4,7 +4,9 @@
   "prefer-stable": true,
   "license": "BSD-3-Clause",
   "require": {
-    "php": ">=7.1.0"
+    "php": ">=7.1.0",
+    "yiisoft/yii2": "^2.0.15",
+    "ipaya/swoole": "@dev"
   },
   "repositories": [
     {
@@ -13,9 +15,6 @@
     }
   ],
   "autoload": {
-    "files": [
-      "src/functions.php"
-    ],
     "psr-4": {
       "iPaya\\Yii\\Swoole\\": "src/iPaya/Yii/Swoole"
     }
