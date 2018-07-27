@@ -49,6 +49,7 @@ class Request extends \yii\web\Request
             'pathInfo' => $requestUri,
             'hostInfo' => $hostInfo,
             'queryParams' => $psrRequest->getQueryParams(),
+            'scriptUrl' => $server->getScriptFile(),
         ]));
 
         if (isset($server->getApplicationConfig()['components']['request']['cookieValidationKey'])) {
