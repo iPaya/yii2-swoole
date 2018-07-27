@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="PHP Files" pattern="file[yii2-swoole]:src/*.php" />
+</component>

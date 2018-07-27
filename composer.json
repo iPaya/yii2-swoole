@@ -1,0 +1,28 @@
+{
+  "name": "ipaya/yii2-swoole",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "src/functions.php"
+    ],
+    "psr-4": {
+      "iPaya\\Yii\\Swoole\\": "src/iPaya/Yii/Swoole"
+    }
+  },
+  "archive": {
+    "exclude": [
+      "!/.idea"
+    ]
+  }
+}
