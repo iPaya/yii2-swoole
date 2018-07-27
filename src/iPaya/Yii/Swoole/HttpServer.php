@@ -94,6 +94,8 @@ class HttpServer extends \iPaya\Swoole\HttpServer
 
         if ($applicationClass == \yii\web\Application::class) {
             $config['components']['request']['class'] = Request::class;
+            $config['components']['request']['scriptFile'] = $config['components']['request']['scriptFile'] ?? $this->getDocumentRoot() . $this->getScriptFile();
+            $config['components']['request']['scriptFile'] = $config['components']['request']['scriptUrl'] ?? $this->getScriptFile();
             $config['components']['response']['class'] = Response::class;
             $config['components']['errorHandler']['class'] = ErrorHandler::class;
         }
